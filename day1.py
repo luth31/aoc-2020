@@ -2,7 +2,6 @@ import util
 
 
 def first(input_path: str):
-    numbers = []
     with open(input_path) as file:
         lines = file.read().splitlines()
         numbers = [int(i) for i in lines]
@@ -13,7 +12,6 @@ def first(input_path: str):
 
 
 def second(input_path: str):
-    numbers = []
     with open(input_path) as file:
         lines = file.read().splitlines()
         numbers = [int(i) for i in lines]

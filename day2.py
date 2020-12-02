@@ -2,7 +2,6 @@ import util
 
 
 def first(input_path: str):
-    lines = []
     passwords = 0
     with open(input_path) as file:
         lines = file.read().splitlines()
@@ -20,7 +19,6 @@ def first(input_path: str):
 
 
 def second(input_path: str):
-    lines = []
     passwords = 0
     with open(input_path) as file:
         lines = file.read().splitlines()
