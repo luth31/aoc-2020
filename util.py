@@ -8,8 +8,7 @@ def file_exists(path: str):
     return True
 
 
-def get_input_paths(path: str) -> (str, str):
-    file_name = os.path.basename(path)[:-3]
-    first_path = os.path.abspath(f'input/{file_name}_1.in')
-    second_path = os.path.abspath(f'input/{file_name}_2.in')
-    return first_path, second_path
+def get_input_path(path: str) -> str:
+    filename = os.path.basename(path)[:-3]
+    path = os.path.abspath(f'input/{filename}_1.in')
+    return path
