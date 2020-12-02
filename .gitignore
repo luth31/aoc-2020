@@ -1,0 +1,7 @@
+# IDE specific ignores
+.idea/
+# Virtual enviornment
+venv/
+# Byte-compiled
+__pycache__/
+*.py[cod]
