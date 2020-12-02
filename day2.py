@@ -36,8 +36,8 @@ def second(input_path: str):
 
 
 if __name__ == '__main__':
-    (first_path, second_path) = util.get_input_paths(__file__)
-    if util.file_exists(first_path):
-        first(first_path)
-    if util.file_exists(second_path):
-        second(second_path)
+    path = util.get_input_path(__file__)
+    if util.file_exists(path):
+        first(path)
+    if util.file_exists(path):
+        second(path)
