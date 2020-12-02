@@ -10,7 +10,14 @@ def file_exists(path: str):
 
 
 def first(input_path: str):
-    pass
+    numbers = []
+    with open(input_path) as file:
+        lines = file.read().splitlines()
+        numbers = [int(i) for i in lines]
+    for idx, i in enumerate(numbers[:-1]):
+        for _, j in enumerate(numbers[idx+1:]):
+            if i + j == 2020:
+                print(f'The answer is: {i * j}')
 
 
 def second(input_path: str):
