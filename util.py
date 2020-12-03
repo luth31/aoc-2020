@@ -10,5 +10,5 @@ def file_exists(path: str):
 
 def get_input_path(path: str) -> str:
     filename = os.path.basename(path)[:-3]
-    path = os.path.abspath(f'input/{filename}_1.in')
+    path = os.path.abspath(f'input/{filename}.in')
     return path
