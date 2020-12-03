@@ -1,22 +1,20 @@
 import util
 
 
-def calc_with_slope(filepath: str, _x: int, _y: int):
+def calc_with_slope(filepath: str, slope_x: int, slope_y: int):
     with open(filepath) as file:
         matrix = file.read().splitlines()
     trees = 0
     (x, y) = 0, 0
     while y < len(matrix)-1:
-        x = (x + _x) % len(matrix[y])
-        y += _y
+        x = (x + slope_x) % len(matrix[y])
+        y += slope_y
         if matrix[y][x] == '#':
             trees += 1
     return trees
 
 
 def first(input_path: str):
-    with open(input_path) as file:
-        matrix = file.read().splitlines()
     print(f"Trees: {calc_with_slope(input_path, 3, 1)}")
 
 
