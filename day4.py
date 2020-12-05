@@ -107,7 +107,7 @@ def second(input_path: str):
     valid_pass = 0
     with open(input_path) as file:
         passports = file.read().split('\n\n')
-    for idx, passport in enumerate(passports):
+    for passport in passports:
         passport = passport.split()
         keys = []
         for attr in passport:
